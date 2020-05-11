@@ -13,9 +13,13 @@ public class title : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             SceneNavigator.Instance.Change("main");
+        }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            SceneNavigator.Instance.Change("HowToPlay");
         }
     }
 }

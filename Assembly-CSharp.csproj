@@ -81,6 +81,7 @@
     <Compile Include="Assets\Script\player\player.cs" />
     <Compile Include="Assets\Script\player\sideAttack.cs" />
     <Compile Include="Assets\Script\player\underAttack.cs" />
+    <Compile Include="Assets\Script\scene\howToPlay.cs" />
     <Compile Include="Assets\Script\scene\result.cs" />
     <Compile Include="Assets\Script\scene\title.cs" />
     <Compile Include="Assets\Script\scene\titleStart.cs" />
