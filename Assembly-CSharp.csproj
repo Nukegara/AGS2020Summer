@@ -63,29 +63,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\block\Bblock.cs" />
-    <Compile Include="Assets\Script\block\goalBlock.cs" />
-    <Compile Include="Assets\Script\block\JumpBlock.cs" />
-    <Compile Include="Assets\Script\block\UBblock.cs" />
+    <Compile Include="Assets\Script\main\block\Bblock.cs" />
+    <Compile Include="Assets\Script\main\block\goalBlock.cs" />
+    <Compile Include="Assets\Script\main\block\JumpBlock.cs" />
+    <Compile Include="Assets\Script\main\block\UBblock.cs" />
+    <Compile Include="Assets\Script\main\object\airParticle.cs" />
+    <Compile Include="Assets\Script\main\object\Camera.cs" />
+    <Compile Include="Assets\Script\main\object\goalNear.cs" />
+    <Compile Include="Assets\Script\main\object\time.cs" />
+    <Compile Include="Assets\Script\main\player\characterController.cs" />
+    <Compile Include="Assets\Script\main\player\player.cs" />
+    <Compile Include="Assets\Script\main\player\sideAttack.cs" />
+    <Compile Include="Assets\Script\main\player\underAttack.cs" />
     <Compile Include="Assets\Script\manager\AudioManager.cs" />
     <Compile Include="Assets\Script\manager\BGMselect.cs" />
     <Compile Include="Assets\Script\manager\CanvasFader.cs" />
     <Compile Include="Assets\Script\manager\gameManager.cs" />
     <Compile Include="Assets\Script\manager\SceneNavigator.cs" />
     <Compile Include="Assets\Script\manager\SingletonMonoBehaviour.cs" />
-    <Compile Include="Assets\Script\object\airParticle.cs" />
-    <Compile Include="Assets\Script\object\Camera.cs" />
-    <Compile Include="Assets\Script\object\goalNear.cs" />
     <Compile Include="Assets\Script\object\playImage.cs" />
-    <Compile Include="Assets\Script\object\time.cs" />
-    <Compile Include="Assets\Script\player\characterController.cs" />
-    <Compile Include="Assets\Script\player\player.cs" />
-    <Compile Include="Assets\Script\player\sideAttack.cs" />
-    <Compile Include="Assets\Script\player\underAttack.cs" />
     <Compile Include="Assets\Script\scene\howToPlay.cs" />
     <Compile Include="Assets\Script\scene\result.cs" />
-    <Compile Include="Assets\Script\scene\title.cs" />
-    <Compile Include="Assets\Script\scene\titleStart.cs" />
+    <Compile Include="Assets\Script\sceneSelect\cursor.cs" />
+    <Compile Include="Assets\Script\title\title.cs" />
+    <Compile Include="Assets\Script\title\titleStart.cs" />
     <Compile Include="Assets\SD_Character\Scripts\SampleAnimation.cs" />
     <Compile Include="Assets\SD_Character\Scripts\SpringBone.cs" />
     <Compile Include="Assets\SD_Character\Scripts\SpringCollider.cs" />
