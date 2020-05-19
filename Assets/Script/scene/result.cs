@@ -23,7 +23,7 @@ public class result : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.X))
             {
-                SceneNavigator.Instance.Change("main");
+                SceneNavigator.Instance.Change("sceneSelect");
             }
             if (Input.GetKeyDown(KeyCode.Z))
             {

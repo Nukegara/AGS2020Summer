@@ -22,7 +22,15 @@ public class BGMselect : MonoBehaviour
         {
             AudioManager.instance.PlayBGM("title");
         }
-        if (SceneManager.GetActiveScene().name == "main")
+        if (SceneManager.GetActiveScene().name == "sceneSelect")
+        {
+            AudioManager.instance.PlayBGM("title");
+        }
+        if (SceneManager.GetActiveScene().name == "stage1")
+        {
+            AudioManager.instance.PlayBGM("main");
+        }
+        if (SceneManager.GetActiveScene().name == "stage2")
         {
             AudioManager.instance.PlayBGM("main");
         }

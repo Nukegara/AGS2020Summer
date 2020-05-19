@@ -15,7 +15,7 @@ public class title : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneNavigator.Instance.Change("stageSelect");
+            SceneNavigator.Instance.Change("sceneSelect");
         }
         if (Input.GetKeyDown(KeyCode.X))
         {

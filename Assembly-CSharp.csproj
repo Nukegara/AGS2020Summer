@@ -85,6 +85,7 @@
     <Compile Include="Assets\Script\scene\howToPlay.cs" />
     <Compile Include="Assets\Script\scene\result.cs" />
     <Compile Include="Assets\Script\sceneSelect\cursor.cs" />
+    <Compile Include="Assets\Script\sceneSelect\stageChoose.cs" />
     <Compile Include="Assets\Script\title\title.cs" />
     <Compile Include="Assets\Script\title\titleStart.cs" />
     <Compile Include="Assets\SD_Character\Scripts\SampleAnimation.cs" />

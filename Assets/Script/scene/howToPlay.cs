@@ -15,7 +15,7 @@ public class howToPlay : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.X))
         {
-            SceneNavigator.Instance.Change("title");
+            SceneNavigator.Instance.Change("sceneSelect");
         }
     }
 }
