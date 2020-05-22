@@ -13,6 +13,7 @@ public class howToPlay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Xで画面遷移
         if(Input.GetKeyDown(KeyCode.X))
         {
             SceneNavigator.Instance.Change("sceneSelect");

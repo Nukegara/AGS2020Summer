@@ -18,6 +18,7 @@ public class BGMselect : MonoBehaviour
     }
     void ChangeBGM()
     {
+        // 各シーンごとに鳴らす音楽の変更
         if(SceneManager.GetActiveScene().name == "title")
         {
             AudioManager.instance.PlayBGM("title");

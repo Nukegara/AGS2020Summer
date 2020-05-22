@@ -413,7 +413,7 @@ MonoBehaviour:
   sp0: {fileID: 21300000, guid: 4604b748fb6d88647874046deb186d59, type: 3}
   sp1: {fileID: 21300000, guid: 8b6e560f39310424f9b008dc1591c8d5, type: 3}
   sp2: {fileID: 21300000, guid: ea42408c400fc544486ca7414cff08f6, type: 3}
-  maxImageNum: 3
+  maxImageNum: 2
 --- !u!114 &730449521
 MonoBehaviour:
   m_ObjectHideFlags: 0

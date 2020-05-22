@@ -25,13 +25,15 @@ public class playImage : MonoBehaviour
     void Update()
     {
         // 画像番号の増減
-        if(Input.GetKeyDown(KeyCode.LeftArrow) && (imageNum >= 0))
+        if(Input.GetKeyDown(KeyCode.LeftArrow) && (imageNum > 0))
         {
             imageNum--;
+            AudioManager.instance.PlaySE("select");
         }
-        if(Input.GetKeyDown(KeyCode.RightArrow) && (imageNum <= maxImageNum))
+        if(Input.GetKeyDown(KeyCode.RightArrow) && (imageNum < maxImageNum))
         {
             imageNum++;
+            AudioManager.instance.PlaySE("select");
         }
         // 画像切り替え
         if (imageNum == 0)

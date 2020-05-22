@@ -18,7 +18,6 @@ public class characterController : MonoBehaviour
     public static bool goalFlag;
     bool deadFlag;
     bool airFlag;
-    bool jumpBlockFlag;
     bool GameOverFlag;
     float charDir;
 
@@ -136,7 +135,7 @@ public class characterController : MonoBehaviour
         }
         if(collision.gameObject.CompareTag("jumpBlock"))
         {
-            jumpBlockFlag = true;
+
         }
     }
     void Animation()

@@ -19,6 +19,7 @@ public class result : MonoBehaviour
     }
     void Result()
     {
+        // 各キーで画面遷移させる
         if ((SceneManager.GetActiveScene().name == "clear") || (SceneManager.GetActiveScene().name == "gameover"))
         {
             if (Input.GetKeyDown(KeyCode.X))

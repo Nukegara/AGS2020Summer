@@ -36,6 +36,7 @@ public class stageChoose : MonoBehaviour
         // スペースを押して番号にあったステージに遷移させる
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            AudioManager.instance.PlaySE("決定");
             if (stageNum == 1)
             {
                 SceneNavigator.Instance.Change("stage1");
@@ -45,6 +46,7 @@ public class stageChoose : MonoBehaviour
                 SceneNavigator.Instance.Change("stage2");
             }
         }
+        // Xで操作説明画面
         if (Input.GetKeyDown(KeyCode.X))
         {
             SceneNavigator.Instance.Change("HowToPlay");
