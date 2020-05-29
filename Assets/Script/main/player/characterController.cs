@@ -17,7 +17,7 @@ public class characterController : MonoBehaviour
     public static bool underAttackFlag;
     public static bool goalFlag;
     bool deadFlag;
-    bool airFlag;
+    public static bool airFlag;
     bool GameOverFlag;
     float charDir;
 
@@ -52,7 +52,6 @@ public class characterController : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        airFlag = JumpBlock.airFlag;
         goalFlag = goalBlock.goalFlag;
         if ((!deadFlag) && (!goalFlag))
         {
@@ -68,6 +67,7 @@ public class characterController : MonoBehaviour
             Goal();
         }
         PlayerRotate();     // プレイヤー回転処理
+
     }
 
     void PlayerRotate()
@@ -101,10 +101,6 @@ public class characterController : MonoBehaviour
         {
             rb.position -= new Vector3(playerSpeed, 0f, 0f);
         }
-        if (airFlag)
-        {
-            jumpPower = 8 * 1.75f;
-        }
         if (!airFlag)
         {
             jumpPower = 8;
@@ -133,9 +129,15 @@ public class characterController : MonoBehaviour
         {
             isJump = false;
         }
-        if(collision.gameObject.CompareTag("jumpBlock"))
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("jumpBlock"))
         {
-
+            if (airFlag)
+            {
+                jumpPower = 8 * 1.75f;
+            }
         }
     }
     void Animation()

@@ -4,27 +4,36 @@ using UnityEngine;
 
 public class JumpBlock : MonoBehaviour
 {
-    GameObject block;
-    public static bool airFlag; // 高く跳ぶかどうかのフラグ
-    int airCnt;                 // 高く跳ぶ時間
+    // ジャンプブロックの処理
+    Object block;
+    bool airFlag;           // 高く跳ぶかどうかのフラグ
+    static int airCnt;      // 高く跳ぶ時間
+    int maxAirCnt;          // 高く跳べる時間
+    int blockNum;           // ブロックの数
+    ParticleSystem childObject;
     // Start is called before the first frame update
     void Start()
     {
-        block = this.GetComponent<GameObject>();
-        airFlag = false;
-        airCnt = 60;
+        block = this.GetComponent<Object>();
+        blockNum = GameObject.FindGameObjectsWithTag("jumpBlock").Length;
+        maxAirCnt = 60 * blockNum;
+        airCnt = maxAirCnt;
+        childObject = transform.GetChild(0).gameObject.GetComponent<ParticleSystem>();
+        childObject.startSpeed = 12.0f;
+        Debug.Log(maxAirCnt);
     }
 
     void FixedUpdate()
     {
         airCnt+=1;
-        if(airCnt >= 180)
+        if(airCnt >= maxAirCnt)
         {
-           airFlag = false;
+            characterController.airFlag = false;
+            childObject.startSpeed = 12.0f;
         }
-        else if(airCnt <= 180)
+        else if(airCnt <= maxAirCnt)
         {
-            airFlag = true;
+            childObject.startSpeed = 36.0f;
         }
     }
     // Update is called once per frame
@@ -36,6 +45,7 @@ public class JumpBlock : MonoBehaviour
             if (characterController.underAttackFlag)
             {
                 airCnt = 0;
+                characterController.airFlag = true;
             }
         }
         if (collision.gameObject.tag == "sideAttack")
@@ -43,6 +53,7 @@ public class JumpBlock : MonoBehaviour
             if (characterController.sideAttackFlag)
             {
                 airCnt = 0;
+                characterController.airFlag = true;
             }
         }
     }

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8380693210928925783}
   - component: {fileID: 8380693210928925801}
   - component: {fileID: 8380693210928925800}
-  - component: {fileID: 8380693210928925802}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -285,7 +284,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -3878,7 +3877,7 @@ ParticleSystem:
         m_RotationOrder: 4
     maxLights: 20
   TrailModule:
-    enabled: 1
+    enabled: 0
     mode: 0
     ratio: 1
     lifetime:
@@ -4754,18 +4753,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &8380693210928925802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8380693210928925782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 418ac864100c7f14e8c9be488e23e361, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8380693211381310765
 GameObject:
   m_ObjectHideFlags: 0
@@ -4780,9 +4767,9 @@ GameObject:
   - component: {fileID: 8380693211381310766}
   - component: {fileID: 8380693211381310754}
   - component: {fileID: 8380693211381310755}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: airBlock
-  m_TagString: UBblock
+  m_TagString: jumpBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

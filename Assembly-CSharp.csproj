@@ -67,7 +67,6 @@
     <Compile Include="Assets\Script\main\block\goalBlock.cs" />
     <Compile Include="Assets\Script\main\block\JumpBlock.cs" />
     <Compile Include="Assets\Script\main\block\UBblock.cs" />
-    <Compile Include="Assets\Script\main\object\airParticle.cs" />
     <Compile Include="Assets\Script\main\object\Camera.cs" />
     <Compile Include="Assets\Script\main\object\goalNear.cs" />
     <Compile Include="Assets\Script\main\object\time.cs" />
@@ -84,10 +83,10 @@
     <Compile Include="Assets\Script\object\playImage.cs" />
     <Compile Include="Assets\Script\scene\howToPlay.cs" />
     <Compile Include="Assets\Script\scene\result.cs" />
-    <Compile Include="Assets\Script\sceneSelect\cursor.cs" />
-    <Compile Include="Assets\Script\sceneSelect\stageChoose.cs" />
-    <Compile Include="Assets\Script\title\title.cs" />
-    <Compile Include="Assets\Script\title\titleStart.cs" />
+    <Compile Include="Assets\Script\scene\sceneSelect\cursor.cs" />
+    <Compile Include="Assets\Script\scene\sceneSelect\stageChoose.cs" />
+    <Compile Include="Assets\Script\scene\title\title.cs" />
+    <Compile Include="Assets\Script\scene\title\titleStart.cs" />
     <Compile Include="Assets\SD_Character\Scripts\SampleAnimation.cs" />
     <Compile Include="Assets\SD_Character\Scripts\SpringBone.cs" />
     <Compile Include="Assets\SD_Character\Scripts\SpringCollider.cs" />
